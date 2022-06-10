@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+
+/* all */
+
+*{
+    /* border: 1px solid black; */
+    font-family: 'Roboto', sans-serif;
+}
+
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* header */
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #7828B4;
+}
+
+.container{
+    position: relative;
+}
+
+.container i{
+    position: absolute;
+    font-size: 20px;
+    right: 5%;
+    top: 25px;
+    color: #FFFFFF;
+}
+
+.logo{
+    display: block;
+    margin-left: 5%;
+    padding-top: 25px;
+    width: 30%;
+}
+
+.logo img{
+    width: 105px;
+}
+
+/* search bar */
+
+.search-box{
+    width: 388px;
+    height: 55px;
+    display: none;
+    justify-content: center;
+    position: absolute;
+    left: 30%;
+    top: 30px;
+    z-index: 1;
+}
+
+.border-box{
+    border-bottom: 1px solid #FFFFFF;
+    width: 100%;
+    height: 30px;
+}
+
+.search-bar{
+    width: 70%;
+    padding-left: 10%;
+    font-style: italic;
+    font-size: 20px;
+    background: none;
+    color: #FFFFFF;
+    border: none;
+}
+
+.search-box i{
+    font-size: 20px;
+    left: 0;
+    top: 5px;
+}
+
+/* tag box */
+
+.tag-box{
+    width: 85%;
+    height: 48px;
+    line-height: 48px;
+    margin: 24px auto 24px auto;
+    background-color: #ebebeb;
+    color: #9b9b9b;
+    border-radius: 4px;
+}
+
+.tag-box>span{
+    margin-left: 16px;
+}
+
+/* filter box and article box */
+
+.control{
+    display: flex;
+}
+
+/* fileter box */
+
+.filter-box{
+    display: none;
+    background-color: #ebebeb;
+    height: 542px;
+}
+
+.filter-box>ul{
+    width: 300px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.filter-box li{
+    width: 100%;
+    border-bottom: 1px solid #9B9B9B;
+}
+
+.filter-box li:last-child{
+    border: none;
+}
+
+.filter-box a{
+    display: block;
+    margin-left: 40px;
+    margin-top: 24px;
+    cursor: default;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* location */
+
+.inner-option{
+    margin: 15px 40px 24px;
+    width: 220px;
+    height: 40px;
+    border: none;
+}
+
+/* date */
+
+.date-box{
+    width: 100%;
+    margin: 16px 40px 26px;
+}
+
+.date-box input{
+    width: 169px;
+    height: 40px;
+    margin-top: 8px;
+    border: none;
+}
+
+.down{
+    margin-left: 20px;
+}
+
+#start-day,#end-day{
+    margin-left: 13px;
+}
+
+/* categories */
+
+.categories-box{
+    margin: 26px 40px 25px;
+}
+
+.categories-box>input{
+    width: 16px;
+    height: 16px;
+}
+
+/* Customize the label */
+.lab{
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+/* Hide the browser's default checkbox */
+.lab input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+/* Create a custom checkbox */
+.checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+}  
+  
+/* When the checkbox is checked, add a blue background */
+.lab input:checked ~ .checkmark{
+    background-color: #2196F3;
+}
+
+/* Create the checkmark (hidden when not checked) */
+.checkmark:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Show the checkmark when checked */
+.lab input:checked ~ .checkmark:after{
+    display: block;
+}
+  
+/* Style the checkmark */
+.lab .checkmark:after{
+    left: 4px;
+    top: 0;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* img */
+
+.img-box>img{
+    width: 100%;
+}
+
+/* article */
+
+.bg{
+    background-color: #FFFFFF;
+}
+
+.content{
+    margin: 0 40px 0 40px;
+    padding-bottom: 24px;
+    position: relative;
+}
+
+.content>h1{
+    font-size: 36px;
+    color: #9013FE;
+    line-height: 45px;
+}
+
+.author{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.filters{
+    font-size: 16px;
+    font-style: italic;
+    background-color: #D7D7D7;
+    color: #FFFFFF;
+    border-radius: 100px;
+    text-align: center;
+    width: 131px;
+    height: 24px;
+    line-height: 24px;
+    position: absolute;
+    left: 120px;
+    top: 65px;
+}
+
+.content>i{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.fa-calendar{
+    margin-left: 10px;    
+}
+
+.location,.date{
+    font-size: 16px;
+    color: #9B9B9B;
+    margin-left: 10px;
+}
+
+@media screen and (min-width:768px) {
+
+    header{
+        height: 92px;
+    }
+    
+    .logo{
+        padding-top: 30px;
+        width: 30%;
+    }
+    
+    .logo img{
+        width: 157px;
+    }
+
+    .search-box{
+        display: flex;
+    }
+
+    #mobile-search{
+        display: none;
+    }
+
+    .filter-box{
+        display: block;
+        margin-right: 40px;
+    }
+
+    .article-box{
+        margin-right: 40px;
+    }
+
+    .content{
+        margin: 0 40px 24px;
+    }
+
+    /* tag box */
+
+    .tag-box{
+        width: 100%;
+    }
+}

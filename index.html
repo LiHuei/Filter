@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+</head>
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><img src="pic/logo.png" alt=""></a>
+                <div class="search-box">
+                    <div class="border-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input class="search-bar" type="search-bar" placeholder="Explore your own activities">
+                    </div>
+                </div>
+        </div>
+    </header>
+    <div class="control">
+        <div class="filter-box">
+            <ul>
+                <li class="top-li">
+                    <a href="javascript:;">Location
+                        <i class="fa-solid fa-plus plus"></i>
+                        <i class="fa-solid fa-minus minus"></i>
+                    </a>
+                    <div class="select-box a">
+                        <select class="inner-option">
+                            <option value="">Taiwan</option>
+                            <option>Australia</option>
+                            <option>Brazil</option>
+                            <option>Canada</option>
+                            <option>Norway</option>
+                            <option>Netherlands</option>
+                            <option>Portugal</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="top-li">
+                    <a href="javascript:;">Date
+                        <i class="fa-solid fa-plus plus"></i>
+                        <i class="fa-solid fa-minus minus"></i>
+                    </a>
+                    <div class="date-box a">
+                        <div class="up">
+                            <span>from</span><input type="date" name="" id="start-day">
+                        </div>
+                        <div class="down">
+                            <span>to</span><input type="date" name="" id="end-day">
+                        </div>                        
+                    </div>
+                </li>
+                <li class="top-li">
+                    <a href="javascript:;">Categories
+                        <i class="fa-solid fa-plus plus"></i>
+                        <i class="fa-solid fa-minus minus"></i>
+                    </a>
+                    <div class="categories-box a">
+                        <label class="lab">All
+                            <input type="checkbox" value="1">
+                            <span class="checkmark"></span>
+                        </label>                          
+                        <label class="lab">Entertainment
+                          <input type="checkbox" value="2">
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="lab">Food
+                          <input type="checkbox" value="3">
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="lab">Learning
+                          <input type="checkbox" value="4">
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="lab">Outdoors
+                            <input type="checkbox" value="5">
+                            <span class="checkmark"></span>
+                          </label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="article-box">
+            <div class="show-result">Showing <span>15</span> results by...</div>
+            <div class="tag-warp">
+                <div class="tag-box1">
+                    <p class="tag">All</p>
+                    <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+                <div class="tag-box2">
+                    <p class="tag">Entertainment</p>
+                    <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+                <div class="tag-box3">
+                    <p class="tag">Food</p>
+                    <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+                <div class="tag-box4">
+                    <p class="tag">Learning</p>
+                    <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+                <div class="tag-box5">
+                    <p class="tag">Outdoors</p>
+                    <i class="fa-regular fa-circle-xmark"></i>
+                </div>    
+            </div>           
+            <div class="article-card">
+                <div class="img-box">
+                    <img src="pic/pic1.jpg" alt="">                
+                </div>
+                <div class="content">
+                    <h1>Kogi Cosby sweater.</h1>
+                    <p class="detail">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Aliquam erat volutpat. Integer ut tincidunt orci. Etiam tristique, elit ut consectetur iaculis, metus lectus mattis justo, vel mollis eros neque quis augue. Sed lobortis ultrices lacus, a placerat metus rutrum sit amet. Aenean ut suscipit justo.</p>
+                    <p class="author">Ethan Foster</p>
+                    <div class="filters">Entertainment</div>
+                    <i class="fa-solid fa-location-dot"></i><span class="location">Kaohsiung City</span>
+                    <div class="br">
+                        <i class="fa-solid fa-calendar"></i><span class="date">2018/5/24 - 2018/5/31</span>                        
+                    </div>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="img-box">
+                    <img src="pic/pic2.jpg" alt="">                
+                </div>
+                <div class="content">
+                    <h1>In the tumultuous busin.</h1>
+                    <p class="detail">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Aliquam erat volutpat. Integer ut tincidunt orci. Etiam tristique, elit ut consectetur iaculis, metus lectus mattis justo, vel mollis eros neque quis augue. Sed lobortis ultrices lacus, a placerat metus rutrum sit amet. Aenean ut suscipit justo.</p>
+                    <p class="author">Herman Cobb</p>
+                    <div class="filters">Entertainment</div>
+                        <i class="fa-solid fa-location-dot"></i><span class="location">Kaohsiung City</span>
+                    <div class="br">
+                        <i class="fa-solid fa-calendar"></i><span class="date">2018/5/24 - 2018/5/31</span>                        
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>    
+    <div class="page-box">
+        <button><i class="fa-solid fa-angles-left"></i></button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button><i class="fa-solid fa-angles-right"></i></button>
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

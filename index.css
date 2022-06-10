@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+
+/* all */
+
+*{
+    /* border: 1px solid black; */
+    font-family: 'Roboto', sans-serif;
+}
+
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* header */
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #7828B4;
+}
+
+.logo{
+    display: block;
+    margin-left: 38%;
+    padding-top: 25px;
+    width: 30%;
+}
+
+.logo img{
+    width: 105px;
+}
+
+/* search bar */
+
+.search-box{
+    background-color: #EBEBEB;
+    box-shadow: 0 5px 10px 0 #D7D7D7;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    position: relative;
+    z-index: 999;
+}
+
+.border-box{
+    border-bottom: 1px solid black;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.search-bar{
+    width: 70%;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 20px;
+    background-color: #EBEBEB;
+    color: #9B9B9B;
+    border: none;
+}
+
+.search-box i{
+    font-size: 24px;
+    padding-top: 15px;
+}
+
+/* nav */
+
+.filter-box{
+    margin-top: 58px;
+}
+
+.filter-box>ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.filter-box li{
+    width: 100%;
+    background-color: #D7D7D7;
+    border-bottom: 1px solid #9B9B9B;
+}
+
+.filter-box a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    padding: 20px 0 20px 40px;
+    display: block;
+}
+
+.filter-box li.active{
+    background-color: #EBEBEB;
+}
+
+.top-li i{
+    color: #9B9B9B;
+    position: absolute;
+    right: 10%;
+    z-index: 1;
+}
+
+/* select box */
+
+.select-box{
+    height: 40px;
+    background-color: #EBEBEB;
+    display: none;
+    margin-bottom: 24px;
+}
+
+.inner-option{
+    width: 80%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: none;
+    margin-left: 40px;
+}
+
+/* date */
+
+.date-box{
+    display: none;
+    width: 100%;
+    margin: 0px 0px 24px 40px;
+}
+
+.date-box input{
+    width: 169px;
+    height: 40px;
+    margin-top: 8px;
+    border: none;
+}
+
+.down{
+    margin-left: 20px;
+}
+
+#start-day,#end-day{
+    margin-left: 13px;
+}
+
+/* categories */
+
+.categories-box{
+    display: none;
+    margin: 11px 40px 25px;
+}
+
+.categories-box>input{
+    width: 16px;
+    height: 16px;
+}
+
+/* Customize the label */
+.lab{
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.lab input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+}  
+
+/* When the checkbox is checked, add a blue background */
+.lab input:checked ~ .checkmark{
+    background-color: #2196F3;
+}
+
+/* Create the checkmark (hidden when not checked) */
+.checkmark:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.lab input:checked ~ .checkmark:after{
+    display: block;
+}
+
+/* Style the checkmark */
+.lab .checkmark:after{
+    left: 4px;
+    top: 0;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* filter tag */
+    
+.show-result{
+    display: none;
+}
+
+.tag-box1,.tag-box2,.tag-box3,.tag-box4,.tag-box5{
+    display: none;
+}
+
+/* article box */
+
+.article-card{
+    margin: auto;
+    width: 80%;
+    height: 414px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 5px 10px 0 #EBEBEB;
+    margin-top: 24px;
+}
+
+.article-card:hover{
+    box-shadow: 2px 5px 10px 0 #9b9b9b;
+}
+
+.img-box{
+    height: 200px;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+}
+
+.content{
+    margin-left: 20px;
+    width: 85%;
+    position: relative;
+}
+
+h1{
+    font-size: 24px;
+    color: #9013FE;
+}
+
+.detail{
+    height: 45px;
+    font-size: 16px;
+    line-height: 24px;
+    overflow: hidden;
+}
+
+.author{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.filters{
+    font-size: 16px;
+    font-style: italic;
+    background-color: #D7D7D7;
+    color: #FFFFFF;
+    border-radius: 100px;
+    text-align: center;
+    width: 131px;
+    height: 24px;
+    line-height: 24px;
+    position: absolute;
+    left: 110px;
+    top: 103px;
+}
+
+.content>i{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.location,.date{
+    font-size: 16px;
+    color: #9B9B9B;
+    margin-left: 10px;
+}
+
+/* page box */
+
+.page-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.page-box>button{
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    color: #9013FE;
+    background-color: #FFFFFF;
+    border: 1px solid #ECEEEF;
+}
+
+.page-box>button.active{
+    background-color: #9013FE;
+    color: #FFFFFF;
+    border: 1px solid #9013FE;
+}
+
+.page-box>button:hover{
+    background-color: #f2f2f2;
+}
+
+.page-box>button>i{
+    font-size: 8px;
+    color: #777777;
+}
+
+@media (min-width:768px) {
+
+    /* header and search */
+
+    header{
+        height: 92px;
+    }
+    
+    .logo{
+        margin-left: 5%;
+        padding-top: 30px;
+    }
+    
+    .logo img{
+        width: 157px;
+    }
+
+    /* search bar */
+
+    .search-box{
+        background-color: #7828B4;
+        box-shadow: none;
+        width: 388px;
+        position: absolute;
+        left: 45%;
+        top: -5px;
+    }
+    
+    .border-box{
+        border-bottom: 1px solid #FFFFFF;
+        width: 100%;
+    }
+
+    .search-bar{
+        background-color: #7828B4;
+        color: #FFFFFF;
+    }
+    
+    .search-box i{
+        color: #FFFFFF;
+        font-size: 20px;
+    }
+
+    .control{
+        display: flex;
+    }
+
+    /* fileter box */
+
+    .filter-box{
+        background-color: #ebebeb;
+        height: 532px;
+        margin: 0;
+    }
+
+    .filter-box>ul{
+        width: 300px;
+    }
+
+    .filter-box li{
+        background-color: #ebebeb;
+        border-bottom: 1px solid #9B9B9B;
+    }
+
+    .filter-box li:last-child{
+        border: none;
+    }
+
+    .filter-box a{
+        display: block;
+        cursor: default;
+        padding: 0;
+        margin: 24px 0 15px 40px;
+    }
+
+    .filter-box i{
+        display: none;
+    }
+
+    /* location */
+
+    .select-box{
+        display: flex;
+        height: 64px;
+        margin-bottom: 0;
+    }
+
+    /* date */
+
+    .date-box{
+        display: block;
+        width: 100%;
+        margin: 0px 0px 24px 40px;
+    }
+
+    .date-box input{
+        width: 169px;
+        height: 40px;
+        margin-top: 8px;
+        border: none;
+    }
+
+    .down{
+        margin-left: 20px;
+    }
+
+    #start-day,#end-day{
+        margin-left: 13px;
+    }
+
+    /* categories */
+
+    .categories-box{
+        display: block;
+        margin: 11px 40px 25px;
+    }
+
+    .categories-box>input{
+        width: 16px;
+        height: 16px;
+    }
+
+    /* Customize the label */
+    .lab{
+        display: block;
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    /* Hide the browser's default checkbox */
+    .lab input{
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    
+    /* Create a custom checkbox */
+    .checkmark{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 16px;
+        width: 16px;
+        background-color: #FFFFFF;
+        border-radius: 2px;
+    }  
+    
+    /* When the checkbox is checked, add a blue background */
+    .lab input:checked ~ .checkmark{
+        background-color: #2196F3;
+    }
+
+    /* Create the checkmark (hidden when not checked) */
+    .checkmark:after{
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    
+    /* Show the checkmark when checked */
+    .lab input:checked ~ .checkmark:after{
+        display: block;
+    }
+    
+    /* Style the checkmark */
+    .lab .checkmark:after{
+        left: 4px;
+        top: 0;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    /* filter tag */
+
+    .show-result{
+        font-size: 24px;
+        margin-bottom: 8px;
+        display: block;
+    }
+
+    .tag-warp{
+        display: flex;
+    }
+
+    .tag-box1,.tag-box2,.tag-box3,.tag-box4,.tag-box5{
+        width: 128px;
+        height: 35px;
+        color: #9013FE;
+        border: 1px solid #9013FE;
+        border-radius: 100px;
+        margin-bottom: 24px;
+        margin-right: 8px;
+        align-items: center;
+    }
+
+    .tag-box1:hover,.tag-box2:hover,.tag-box3:hover,.tag-box4:hover,.tag-box5:hover{
+        background-color: #9013FE;
+        color: #FFFFFF;
+    }
+
+    .tag-box1>p,.tag-box2>p,.tag-box3>p,.tag-box4>p,.tag-box5>p{
+        width: 65%;
+        overflow: hidden;
+        font-style: italic;
+        font-size: 16px;
+        margin-left: 16px;
+    }
+
+    /* article box */
+
+    .article-box{
+        margin: 24px 40px 0;
+    }
+
+    .article-card{
+        margin: 0;
+        margin-bottom: 24px;
+        width: 100%;
+    }
+
+    /* page box */
+
+    .page-box{
+        justify-content: right;
+        margin-right: 40px;
+        margin-top: 0;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .search-box{
+        left: 20%;
+    }
+    
+    .filter-box{
+        margin-left: 40px;
+    }
+
+    .select-box{
+        margin-bottom: 0;
+    }
+
+    /* article box */
+
+    .article-card{
+        display: flex;
+        height: 220px;
+    }
+
+    .img-box{
+        width: 220px;
+        height: 220px;
+        position: relative;
+    }
+
+    .img-box>img{
+        width: 150%;
+        position: absolute;
+        right: 0;
+    }
+
+    .content{
+        width: 70%;
+    }
+
+    .content>i{
+        font-size: 14px;
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+
+    .filters{
+        left: 120px;
+        top: 120px;
+    }
+
+    .location,.date{
+        font-size: 16px;
+        color: #9B9B9B;
+        margin-left: 7px;
+    }
+
+    .br{
+        display: inline;
+        margin-left: 20px;
+    }
+}
